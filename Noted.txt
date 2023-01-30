@@ -1,0 +1,25 @@
+In tF , tfFiles are always execute in alphbatical order.
+abc.tf,def.tf,geh.tf ... -> suppose this type of file names we have then files also exe in alphabatical order.
+
+For type var value in string -> "Hello ${var.varname}"
+
+give var value through cmdline -> terraform plan -var "username=MrunalMania"
+
+also inside a single tf file , all blocks run as per alphbatical order.
+
+ep -12 -> gaurav sharma
+
+=====================================================================================
+
+terraform.tfvars => terraform read value of defined variables from this file.
+
+cusotm terraform tfvars file -> development.tfvars -> run cmd -> terraform plan -var-file=filename  / in our case -> terraform plan -var-file=development.tfvars
+
+===================
+environment variable=> export username = mrunal
+
+if we want to read environment variable value to our tf file->
+export TF_VAR_variblename = variable value.
+e.g -> export TF_VAR_username = mrunal
+
+ep23 - > gaurav sharma
